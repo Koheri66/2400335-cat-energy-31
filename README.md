@@ -2,7 +2,7 @@
 
 * Студент: [Екатерина Набатова](https://up.htmlacademy.ru/adaptive/31/user/2400335).
 * Наставник: [Антон Варнавский](https://htmlacademy.ru/profile/anton_varnauski).
-
+* Сайт: [Мой проект Кэт Энерджи](https://github.com/Koheri66/2400335-cat-energy-31).
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами для работы над проектом — `source/`.**
