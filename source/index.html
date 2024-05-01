@@ -6,6 +6,10 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -13,8 +17,16 @@
   /*Навигация*/
   <header class="main-header navigator">
     <a class="navigator__logo" href="index.html">
-      <img class="navigator__logo-image" src="#" width="33" height="38" alt="Логотип Кэт энерджи">
-      <img class="navigator__logo-text" src="#" width="101" height="20" alt="Надпись Кэт энерджи">
+
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
+
+        <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
+
+        <img class="navigator__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      </picture>
+      <img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи">
+
     </a>
     <nav class="navigator__menu">
       <ul class="navigator__list site-list">
@@ -42,7 +54,17 @@
     <section class="hero">
       <h1 class="hero-title">Функциональное питание <br>для котов</h1>
       <p class="hero-slogan">Занялся собой? Займись котом!</p>
-      <img class="hero-image" src="#" width="280" height="270" alt="Фотография упаковки кошачьего корма">
+
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index/index-can/index-can-desktop@1x.png 1x, images/index/index-can/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index/index-can/index-can-desktop@1x.webp 1x, images/index/index-can/index-can-desktop@2x.webp 2x">
+
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index/index-can/index-can-tablet@1x.png 1x, images/index/index-can/index-can-tablet@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index/index-can/index-can-tablet@1x.webp 1x, images/index/index-can/index-can-tablet@2x.webp 2x">
+
+        <img class="hero-image" src="images/index/index-can/index-can-mobile@1x.png" width="280" height="270" srcset="images/index/index-can/index-can-mobile@2x.png 2x" alt="Фотография упаковки кошачьего корма">
+      </picture>
+
       <a class="hero-link" href="#">Подобрать программу</a>
     </section>
 
@@ -115,8 +137,17 @@
       </ul>
       <p class="example__text">Затраты на питание: 15 000 руб.</p>
       <div class="example__range">
-        <img class="example__range-image" src="#" width="280" height="256" alt="Фотография толстого кота">
-        <img class="example__range-image" src="#" width="280" height="256" alt="Фотография толстого кота">
+
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/cat-before/cat-before-tablet@1x.png 1x, images/index/cat-before/cat-before-tablet@2x.png 2x">
+
+          <img class="example__range-image" src="images/index/cat-before/cat-before-mobile@1x.png" width="280" height="256" srcset="images/index/cat-before/cat-before-mobile@2x.png" alt="Фотография толстого кота">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/cat-after/cat-after-tablet@1x.png 1x, images/index/cat-after/cat-after-tablet@1x.png 2x">
+
+          <img class="example__range-image" src="images/index/cat-after/cat-after-mobile@1x.png" width="280" height="256" srcset="images/index/cat-after/cat-after-mobile@2x.png" alt="Фотография худого кота">
+        </picture>
         <button class="example__switch" type="button">Ползунок слайдера</button>
       </div>
     </section>
@@ -129,8 +160,15 @@
         <address class="map__address">ул. Большая Конюшенная, д. 19/8</address>
         <address class="map__city">Санкт-Петербург</address>
       </div>
-      <img class="map__location" src="#" width="320" height="362" alt="Карта с локацией магазина">
-      <img class="map__location-pin" src="#" width="57" height="53" alt="Точка расположения магазина">
+
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/index/map/map-desktop@1x.png 1x, images/index/map/map-desktop@2x.png 2x">
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/index/map/map-desktop@1x.webp 1x, images/index/map/map-desktop@2x.webp 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/index/map/map-tablet@1x.png 1x, images/index/map/map-tablet@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/index/map/map-tablet@1x.webp 1x, images/index/map/map-tablet@2x.webp 2x">
+        <img class="map__location" src="images/index/map/map-mobile@1x.png" width="320" height="362" srcset="images/index/map/map-mobile@2x.png" alt="Карта с локацией магазина">
+      </picture>
+      <img class="map__location-pin" src="images/index/map-pin/map-pin-mobile@1x.png" width="57" height="53" srcset="images/index/map-pin/map-pin-mobile@2x.png" alt="Точка расположения магазина">
     </section>
   </main>
 
