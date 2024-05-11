@@ -14,7 +14,7 @@
 </head>
 
 <body class="page__body">
-  /*Навигация*/
+  <!--Навигация-->
   <header class="main-header navigator">
     <a class="navigator__logo" href="index.html">
 
@@ -49,26 +49,26 @@
     </nav>
   </header>
 
-  /*Главная страница*/
+  <!--Главная страница-->
   <main class="main-container">
     <section class="hero">
-      <h1 class="hero-title">Функциональное питание <br>для котов</h1>
-      <p class="hero-slogan">Занялся собой? Займись котом!</p>
+      <h1 class="hero__title">Функциональное питание <br>для котов</h1>
+      <p class="hero__slogan">Занялся собой? Займись котом!</p>
 
       <picture>
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index/index-can/index-can-desktop@1x.png 1x, images/index/index-can/index-can-desktop@2x.png 2x">
         <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index/index-can/index-can-desktop@1x.webp 1x, images/index/index-can/index-can-desktop@2x.webp 2x">
-
-        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index/index-can/index-can-tablet@1x.png 1x, images/index/index-can/index-can-tablet@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index/index-can/index-can-tablet@1x.webp 1x, images/index/index-can/index-can-tablet@2x.webp 2x">
 
-        <img class="hero-image" src="images/index/index-can/index-can-mobile@1x.png" width="280" height="270" srcset="images/index/index-can/index-can-mobile@2x.png 2x" alt="Фотография упаковки кошачьего корма">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index/index-can/index-can-desktop@1x.png 1x, images/index/index-can/index-can-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index/index-can/index-can-tablet@1x.png 1x, images/index/index-can/index-can-tablet@2x.png 2x">
+
+        <img class="hero__image" src="images/index/index-can/index-can-mobile@1x.png" width="280" height="270" srcset="images/index/index-can/index-can-mobile@2x.png 2x" alt="Фотография упаковки кошачьего корма">
       </picture>
 
-      <a class="hero-link" href="#">Подобрать программу</a>
+      <a class="hero__link" href="#">Подобрать программу</a>
     </section>
 
-    /*Программы*/
+    <!--Программы-->
     <section class="program">
       <h2 class="visually-hidden">Варианты программ
       </h2>
@@ -88,9 +88,9 @@
       </ul>
     </section>
 
-    /*Преимущества*/
+    <!--Преимущества-->
     <section class="advantages">
-      <h2 class="advantages-title title">Как это работает
+      <h2 class="advantages__title title">Как это работает
       </h2>
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--one">
@@ -120,10 +120,10 @@
       </ol>
     </section>
 
-    /*Пример*/
+    <!--Пример-->
     <section class="example">
-      <h2 class="example-title">Живой пример</h2>
-      <p class="example-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <ul class="example__list">
         <li class="example__item">
@@ -139,11 +139,15 @@
       <div class="example__range">
 
         <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/index/cat-before/cat-before-tablet@1x.webp 1x, images/index/cat-before/cat-before-tablet@2x.webp 2x">
+
           <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/cat-before/cat-before-tablet@1x.png 1x, images/index/cat-before/cat-before-tablet@2x.png 2x">
 
           <img class="example__range-image" src="images/index/cat-before/cat-before-mobile@1x.png" width="280" height="256" srcset="images/index/cat-before/cat-before-mobile@2x.png" alt="Фотография толстого кота">
         </picture>
         <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/index/cat-after/cat-after-tablet@1x.webp 1x, images/index/cat-after/cat-after-tablet@2x.webp 2x">
+
           <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/index/cat-after/cat-after-tablet@1x.png 1x, images/index/cat-after/cat-after-tablet@1x.png 2x">
 
           <img class="example__range-image" src="images/index/cat-after/cat-after-mobile@1x.png" width="280" height="256" srcset="images/index/cat-after/cat-after-mobile@2x.png" alt="Фотография худого кота">
@@ -152,7 +156,7 @@
       </div>
     </section>
 
-    /*Карта*/
+    <!--Карта-->
     <section class="map">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="map__container">
@@ -162,22 +166,23 @@
       </div>
 
       <picture>
-        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/index/map/map-desktop@1x.png 1x, images/index/map/map-desktop@2x.png 2x">
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/index/map/map-desktop@1x.webp 1x, images/index/map/map-desktop@2x.webp 2x">
-        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/index/map/map-tablet@1x.png 1x, images/index/map/map-tablet@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/index/map/map-tablet@1x.webp 1x, images/index/map/map-tablet@2x.webp 2x">
+
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/index/map/map-desktop@1x.png 1x, images/index/map/map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/index/map/map-tablet@1x.png 1x, images/index/map/map-tablet@2x.png 2x">
         <img class="map__location" src="images/index/map/map-mobile@1x.png" width="320" height="362" srcset="images/index/map/map-mobile@2x.png" alt="Карта с локацией магазина">
       </picture>
       <img class="map__location-pin" src="images/index/map-pin/map-pin-mobile@1x.png" width="57" height="53" srcset="images/index/map-pin/map-pin-mobile@2x.png" alt="Точка расположения магазина">
     </section>
   </main>
 
-  /*Подвал*/
-  <footer class="main-footer">
-    <a class="main-footer__logo" href="#">
+  <!--Подвал-->
+  <footer class="footer">
+    <a class="footer__logo" href="#">
       <img src="#" width="128" height="24" alt="Логотип Кэт энерджи">
     </a>
-    <ul class="main-footer__social social">
+    <ul class="footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
           <span class="visually-hidden">Мы в Вконтакте</span>
@@ -194,12 +199,10 @@
         </a>
       </li>
     </ul>
-    <div class="main-footer__htmlacademy">
-      <a class="main-footer__htmlacademy image" href="#">
-        <p class="main-footer-htmlacademy text">HTML Academy</p>
-        <img src="#" width="27" height="34" alt="Логотип академии">
-      </a>
-    </div>
+    <a class="footer__htmlacademy image" href="#">
+      <p class="footer-htmlacademy text">HTML Academy</p>
+      <img src="#" width="27" height="34" alt="Логотип академии">
+    </a>
   </footer>
 
 </body>
