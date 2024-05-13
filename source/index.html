@@ -15,21 +15,22 @@
 
 <body class="page__body">
   <!-- Навигация -->
-  <header class="main-header navigator">
-    <a class="navigator__logo" href="index.html">
-
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
-
-        <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
-
-        <img class="navigator__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      </picture>
-      <img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи">
-
-    </a>
-    <nav class="navigator__menu">
-      <ul class="navigator__list site-list">
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__logo-image logo-image" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
+          <img class="logo-image__icon" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+      <a class="main-header_logo-text logo-text" href="index.html"><img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи"></a>
+      <button class="main-header__menu button" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
+    <nav class="main-header__navigator navigator">
+      <ul class="navigator__list">
         <li class="navigator__item navigator__item--current">
           <a class="navigator__link" href="index.html">Главная
           </a>
@@ -43,9 +44,6 @@
           </a>
         </li>
       </ul>
-      <button class="navigator__menu-button" type="button">
-        <span class="visually-hidden">Меню</span>
-      </button>
     </nav>
   </header>
 
@@ -65,7 +63,7 @@
         <img class="hero__image" src="images/index/index-can/index-can-mobile@1x.png" width="280" height="270" srcset="images/index/index-can/index-can-mobile@2x.png 2x" alt="Фотография упаковки кошачьего корма">
       </picture>
 
-      <a class="hero__link" href="#">Подобрать программу</a>
+      <a class="hero__link button" href="#">Подобрать программу</a>
     </section>
 
     <!-- Программы -->
@@ -93,25 +91,25 @@
       <h2 class="advantages__title title">Как это работает
       </h2>
       <ol class="advantages__list">
-        <li class="advantages__item advantages__item--one">
+        <li class="advantages__item advantages__item--plant">
           <span class="advantages__text">
             Функциональное питание содержит только полезные питательные вещества.
           </span>
           <span class="visually-hidden">1</span>
         </li>
-        <li class="advantages__item advantages__item--two">
+        <li class="advantages__item advantages__item--water">
           <span class="advantages__text">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </span>
           <span class="visually-hidden">2</span>
         </li>
-        <li class="advantages__item advantages__item--three">
+        <li class="advantages__item advantages__item--food">
           <span class="advantages__text">
             Замените один-два приема обычной еды на наше функциональное питание.
           </span>
           <span class="visually-hidden">3</span>
         </li>
-        <li class="advantages__item advantages__item--four">
+        <li class="advantages__item advantages__item--time">
           <span class="advantages__text">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </span>
@@ -135,7 +133,7 @@
           <p class="example__caption">затрачено времени</p>
         </li>
       </ul>
-      <p class="example__text">Затраты на питание: 15 000 руб.</p>
+      <p class="example__total">Затраты на питание: 15 000 руб.</p>
       <div class="example__range">
 
         <picture>
@@ -161,8 +159,9 @@
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="map__container">
         <p class="map__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="map__address">ул. Большая Конюшенная, д. 19/8</address>
-        <address class="map__city">Санкт-Петербург</address>
+        <address class="map__address">ул. Большая Конюшенная, д. 19/8
+          <p class="map__city">Санкт-Петербург</p>
+        </address>
       </div>
 
       <picture>
@@ -199,9 +198,9 @@
         </a>
       </li>
     </ul>
-    <a class="footer__htmlacademy image" href="#">
-      <p class="footer-htmlacademy text">HTML Academy</p>
-      <img src="#" width="27" height="34" alt="Логотип академии">
+    <a class="footer__logo-htmlacademy logo-htmlacademy" href="#">
+      <p class="logo-htmlacademy text">HTML Academy</p>
+      <img class="logo-htmlacademy image" src="#" width="27" height="34" alt="Логотип академии">
     </a>
   </footer>
 

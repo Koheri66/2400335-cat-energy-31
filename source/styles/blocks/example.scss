@@ -1,0 +1,55 @@
+.example {
+  background: none;
+}
+
+.example__title {
+  font-family: $font-oswald;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-black;
+}
+
+.example__text {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.example__list {
+  background: none;
+}
+
+.example__item {
+  background: none;
+}
+
+.example__units {
+  font-family: $font-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  color: $base-black;
+  text-transform: uppercase;
+}
+
+.example__caption {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.example__total {
+  font-family: $font-oswald;
+  line-height: 20px;
+  text-align: center;
+}
+
+.example__range {
+  background: none;
+}
+
+.example__range-image {
+  background: none;
+}
+
+.example__switch {
+  background: none;
+}

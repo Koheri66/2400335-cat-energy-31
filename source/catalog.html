@@ -2,37 +2,40 @@
 <html class="page" lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Cat Energy</title>
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="styles/styles.css">
-	<link rel="icon" href="favicon.ico">
-	<link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="favicons/180.png">
-	<link rel="manifest" href="manifest.webmanifest">
-	<script src="scripts/index.js" defer></script>
+  <meta charset="UTF-8">
+  <title>Cat Energy</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <!-- Навигация -->
-  <header class="main-header navigator">
-    <a class="navigator__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
-
-        <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
-
-        <img class="navigator__logo-image" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
-      </picture>
-      <img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи">
-    </a>
-    <nav class="navigator__menu">
-      <ul class="navigator__list site-list">
-        <li class="navigator__item">
+  <header class="main-header">
+    <div class="main-header__container">
+      <a class="main-header__logo-image logo-image" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
+          <img class="logo-image__icon" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+        </picture>
+      </a>
+      <a class="main-header_logo-text logo-text" href="index.html"><img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи"></a>
+      <button class="main-header__menu button" type="button">
+        <span class="visually-hidden">Меню</span>
+      </button>
+    </div>
+    <nav class="main-header__navigator navigator">
+      <ul class="navigator__list">
+        <li class="navigator__item navigator__item--current">
           <a class="navigator__link" href="index.html">Главная
           </a>
         </li>
-        <li class="navigator__item navigator__item--current">
+        <li class="navigator__item">
           <a class="navigator__link" href="catalog.html">Каталог продукции
           </a>
         </li>
@@ -41,9 +44,6 @@
           </a>
         </li>
       </ul>
-      <button class="navigator__menu-button" type="button">
-        <span class="visually-hidden">Меню</span>
-      </button>
     </nav>
   </header>
 
@@ -330,7 +330,7 @@
     <!-- Акции -->
     <section class="subscription">
       <h2 class="subscription__title">Акции и новинки</h2>
-      <p>Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <p class="subscription__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscription__email-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscription__label">
           <span class="visually-hidden">Ваш e-mail</span>
@@ -383,9 +383,9 @@
         </a>
       </li>
     </ul>
-    <a class="footer__htmlacademy image" href="#">
-      <p class="footer-htmlacademy text">HTML Academy</p>
-      <img src="#" width="27" height="34" alt="Логотип академии">
+    <a class="footer__logo-htmlacademy logo-htmlacademy" href="#">
+      <p class="logo-htmlacademy text">HTML Academy</p>
+      <img class="logo-htmlacademy image" src="#" width="27" height="34" alt="Логотип академии">
     </a>
   </footer>
 </body>
