@@ -1,0 +1,23 @@
+.map__container {
+  background: none;
+}
+
+.map__title {
+  font-family: $font-oswald;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.map__address {
+  line-height: 20px;
+}
+
+.map__location {
+  background: none;
+}
+
+.map__location-pin {
+  background: none;
+}
