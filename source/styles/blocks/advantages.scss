@@ -11,7 +11,8 @@
 }
 
 .advantages__list {
-  @include reset-list; }
+  @include reset-list;
+}
 
 .advantages__item::before {
   content: "";
