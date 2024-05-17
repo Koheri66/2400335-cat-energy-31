@@ -1,9 +1,10 @@
 .footer {
-  background: none;
+  background-color: $base-grey;
 }
 
 .footer__logo {
-  background: none;
+  mask-image: url("../../icons/stack.svg#footer_footer-logo");
+  background-color: currentColor;
 }
 
 .footer__social {
@@ -11,5 +12,6 @@
 }
 
 .footer__logo-htmlacademy {
-  background: none;
+  mask-image: url("../../icons/stack.svg#footer_logo-htmlacademy");
+  background-color: currentColor;
 }

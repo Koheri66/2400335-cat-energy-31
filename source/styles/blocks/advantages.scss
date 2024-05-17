@@ -11,27 +11,34 @@
 }
 
 .advantages__list {
-  background: none;
+  @include reset-list;
 }
 
-.advantages__item {
-  background: none;
+.advantages__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $base-green;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
 }
 
-.advantages__item--plant {
-  background: none;
+.advantages__item--plant::before {
+  background-image: url("../../icons/stack.svg#index_icon-plant");
 }
 
-.advantages__item--water {
-  background: none;
+.advantages__item--water::before {
+  background-image: url("../../icons/stack.svg#index_icon-water");
 }
 
-.advantages__item--food {
-  background: none;
+.advantages__item--food::before {
+  background-image: url("../../icons/stack.svg#index_icon-food");
 }
 
-.advantages__item--time {
-  background: none;
+.advantages__item--time::before {
+  background-image: url("../../icons/stack.svg#index_icon-time");
 }
 
 .advantages__text {

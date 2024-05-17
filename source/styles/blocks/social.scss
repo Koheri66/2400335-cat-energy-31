@@ -3,21 +3,30 @@
 }
 
 .social__item {
-  background: none;
+  @include reset-list;
 }
 
 .social__link {
-  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: $base-grey;
+  text-decoration: none;
 }
 
 .social__link--vkontakte {
-  background: none;
+  mask-image: url("../../icons/stack.svg#footer_icon-social-vkontakte");
+  background-color: currentColor;
 }
 
 .social__link--youtube {
-  background: none;
+  mask-image: url("../../icons/stack.svg#footer_icon-social-youtube");
+  background-color: currentColor;
 }
 
 .social__link--telegram {
-  background: none;
+  mask-image: url("../../icons/stack.svg#footer_icon-social-telegram");
+  background-color: currentColor;
 }

@@ -23,16 +23,23 @@
           <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
           <img class="logo-image__icon" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/index/logo/logo-text.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/index/logo/logo-text.svg">
+          <img class="logo-image__text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи">
+        </picture>
       </a>
-      <a class="main-header_logo-text logo-text" href="index.html"><img class="navigator__logo-text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи"></a>
       <button class="main-header__menu button" type="button">
+        <svg class="button__menu" width="28" height="22">
+          <use href="icons/stack.svg#index_menu-mobile"></use>
+        </svg>
         <span class="visually-hidden">Меню</span>
       </button>
     </div>
     <nav class="main-header__navigator navigator">
       <ul class="navigator__list">
-        <li class="navigator__item navigator__item--current">
-          <a class="navigator__link" href="index.html">Главная
+        <li class="navigator__item">
+          <a class="navigator__link navigator__link--current" href="index.html">Главная
           </a>
         </li>
         <li class="navigator__item">
@@ -75,15 +82,14 @@
           <h3 class="program__title program__title--slim">Похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог slim</a>
-          <img class="program__image" src="#" width="50" height="53" alt="Иконка худого кота">
         </li>
         <li class="program__item">
           <h3 class="program__title program__title--pro">Набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="#">Каталог pro</a>
-          <img class="program__image" src="#" width="67" height="50" alt="Иконка толстого кота">
         </li>
       </ul>
+
     </section>
 
     <!-- Преимущества -->
@@ -179,7 +185,7 @@
   <!-- Подвал -->
   <footer class="footer">
     <a class="footer__logo" href="#">
-      <img src="#" width="128" height="24" alt="Логотип Кэт энерджи">
+      <span class="visually-hidden">Логотип Cat Energy</span>
     </a>
     <ul class="footer__social social">
       <li class="social__item">
@@ -189,18 +195,19 @@
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+
           <span class="visually-hidden">Мы в Youtube</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+
           <span class="visually-hidden">Мы в Telegram</span>
         </a>
       </li>
     </ul>
     <a class="footer__logo-htmlacademy logo-htmlacademy" href="#">
-      <p class="logo-htmlacademy text">HTML Academy</p>
-      <img class="logo-htmlacademy image" src="#" width="27" height="34" alt="Логотип академии">
+      <p class="logo-htmlacademy__text">HTML Academy</p>
     </a>
   </footer>
 
