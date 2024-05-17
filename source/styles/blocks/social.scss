@@ -3,7 +3,7 @@
 }
 
 .social__item {
-  background: none;
+  @include reset-list;
 }
 
 .social__link {

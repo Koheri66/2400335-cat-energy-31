@@ -11,7 +11,7 @@
 }
 
 .navigator__item {
-  background: none;
+  @include reset-list;
 }
 
 .navigator__link {

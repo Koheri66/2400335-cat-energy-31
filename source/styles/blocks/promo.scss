@@ -1,6 +1,19 @@
+.promo {
+  @include flexbox (row, space-between, center);
+}
+
 .promo__text {
   font-size: 16px;
   line-height: 20px;
   color: $base-white;
   background-color: $base-green;
+}
+
+.promo__text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#catalog_icon-gift");
 }

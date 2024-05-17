@@ -1,23 +1,19 @@
 .main-header {
-  background: none;
+  margin: 0 13px auto;
 }
 
 .main-header__container {
-  background: none;
+  @include flexbox (row, space-between, center);
+  flex-wrap: wrap;
+  width: $mobile-width;
+  margin-top: 0 auto;
 }
 
 .main-header__logo-image {
-  background: none;
+  margin-right: 13px;
 }
 
 .main-header_logo-text {
-  background: none;
-}
-
-.main-header__menu {
-  background: none;
-}
-
-.main-header__navigator {
-  background: none;
+  width: 101px;
+  height: 18px;
 }
