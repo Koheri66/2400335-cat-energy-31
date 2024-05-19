@@ -1,3 +1,13 @@
-.logo-image {
-  background: none;
+.logo-image__icon {
+  margin-right: 13px;
+}
+
+.logo-image__text {
+  width: 101px;
+  height: 18px;
+
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }

@@ -1,11 +1,21 @@
 .hero {
-  background: none;
+  @include flexbox (column, center, center);
+  font-size: $font-oswald;
+  text-align: center;
+  color: $base-white;
+  background-color: $base-green;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container;
+    color: $base-black;
+    background-color: $base-white;
+    margin-top: 0 auto;
+  }
 }
 
 .hero__title {
   font-size: 36px;
   line-height: 36px;
-  text-align: center;
 }
 
 .hero__slogan {
@@ -18,5 +28,8 @@
 }
 
 .hero__link {
-  background: none;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-white;
+  background-color: $base-green;
 }
