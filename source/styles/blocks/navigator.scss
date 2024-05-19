@@ -1,19 +1,43 @@
 .navigator {
+  position: relative;
+  min-height: 66px;
+}
+
+.navigator__list {
+  @include reset-list;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    @include flexbox (space-between, center);
+    gap: 33px;
+  }
+}
+
+.navigator__item {
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.navigator__item::after {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.navigator__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 24px;
   font-family: $font-oswald;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   color: $base-black;
-}
-
-.navigator__list {
-  background: none;
-}
-
-.navigator__item {
-  @include reset-list;
-}
-
-.navigator__link {
-  background: none;
+  text-decoration: none;
 }

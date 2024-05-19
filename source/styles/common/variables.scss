@@ -4,6 +4,11 @@ $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 
+//container
+$mobile-container: 87%;
+$tablet-container: 92%;
+$desktop-container: 85%;
+
 //font
 $font-oswald: "Oswald", "Arial", sans-serif;
 
@@ -14,3 +19,7 @@ $base-green: #68b738;
 $base-light-grey: #f2f2f2;
 $base-grey: #666666;
 $base-dark-grey: #444444;
+
+//color-decor
+$decor-light-grey: #e6e6e6;
+$decor-grey: #cdcdcd;
