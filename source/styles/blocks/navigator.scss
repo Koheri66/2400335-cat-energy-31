@@ -32,12 +32,23 @@
 
 .navigator__link {
   display: block;
-  padding-top: 22px;
-  padding-bottom: 24px;
   font-family: $font-oswald;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
   color: $base-black;
   text-decoration: none;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  transition: opacity 0.2s linear;
+
+  &:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition: opacity 0.2s linear;
+  }
 }

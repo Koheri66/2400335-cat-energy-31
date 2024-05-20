@@ -29,13 +29,19 @@
 }
 
 .main-header__logo-image {
-  display: flex;
-  align-items: center;
+  @include flexbox(space-between, center);
   gap: 56px;
+
+  @media (min-width: $tablet-width) {
+    gap: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 14px;
+  }
 }
 
 .main-header__menu {
-  position: absolute;
   width: 24px;
   height: 24px;
   mask-image: url("../../icons/stack.svg#index_menu-mobile");
@@ -50,10 +56,10 @@
 
 .main-header__navigator {
   @media (min-width: $tablet-width) {
-    width: 60%;
+    width: 440px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 35%;
+    width: 580px;
   }
 }

@@ -1,6 +1,5 @@
 .button {
-  padding: 10px;
-  border: none;
+  display: block;
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 20px;
@@ -8,11 +7,13 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $base-white;
-  user-select: none;
+  padding: 10px 0;
+  transition: background-color 0.2s linear;
   cursor: pointer;
 
   &:hover {
     background-color: #5eaa2f;
+    transition: background-color 0.2s linear;
   }
 
   &:focus-visible {
@@ -22,7 +23,8 @@
   }
 
   &:active {
-    color: rgba($color: $base-white, $alpha: 0.6);
+    color: rgba($base-white, 0.3);
+    transition: color 0.2s linear;
   }
 
   &:disabled {

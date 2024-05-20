@@ -1,16 +1,17 @@
 .hero {
-  @include flexbox (column, center, center);
-  font-size: $font-oswald;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.hero__container {
+  position: relative;
   text-align: center;
   color: $base-white;
-  background-color: $base-green;
-
-  @media (min-width: $tablet-width) {
-    width: $tablet-container;
-    color: $base-black;
-    background-color: $base-white;
-    margin-top: 0 auto;
-  }
+  min-width: 320px;
+  margin: 0 0 20px;
+  padding-top: 27px;
+  background-image: linear-gradient(to top, rgba($base-green, 0.85), rgba($base-green, 0.85));
 }
 
 .hero__title {
@@ -24,12 +25,13 @@
 }
 
 .hero__image {
-  background: none;
+  display: flex;
+  width: 280px;
+  height: 270px;
+  margin: -135px auto 3px;
 }
 
 .hero__link {
-  font-size: 16px;
-  line-height: 20px;
-  color: $base-white;
-  background-color: $base-green;
+  width: 280px;
+  margin: 0 auto;
 }
