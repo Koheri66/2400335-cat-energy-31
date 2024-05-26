@@ -1,3 +1,23 @@
 .catalog {
-  background-color: none;
+  font-family: $font-oswald;
+  font-size: 36px;
+  line-height: 36px;
+  color: $color-black;
+  margin: 0;
+  padding: 27px 20px 41px;
+  border-top: 1px solid $color-decor-grey;
+  border-bottom: 1px solid $color-grey-border;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 65px 30px 84px;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 74px 110px 84px;
+  }
 }

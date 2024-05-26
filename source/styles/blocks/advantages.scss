@@ -1,10 +1,18 @@
 .advantages {
-  width: $mobile-container;
-  margin: 0 auto;
-  margin-bottom: 49px;
+  padding: 0 20px 49px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 47px;
+    padding: 45px 30px 47px;
+    padding-top: 45px;
+    padding-left: 30px;
+    border-bottom: 1px solid $color-border-menu;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    padding: 71px 106px 69px 110px;
+    border-bottom: none;
   }
 }
 
@@ -12,20 +20,30 @@
   font-family: $font-oswald;
   font-size: 36px;
   line-height: 40px;
-  color: $base-black;
-  text-transform: uppercase;
+  color: $color-black;
+  margin: 0;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 32px;
+  }
 }
 
 .advantages__list {
+  @include flexbox (column);
   @include reset-list;
-  display: flex;
-  flex-direction: column;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 37px 60px;
+    counter-reset: number 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,11 +55,34 @@
 .advantages__item {
   display: grid;
   grid-template-columns: 60px 1fr;
+  align-items: center;
+  position: relative;
   gap: 20px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     gap: 31px;
+    counter-increment: number 1;
+    padding-top: 41px;
+    padding-bottom: 56px;
+
+    &::after {
+      content: counter(number);
+      font-family: $font-oswald;
+      color: $color-light-grey;
+      position: absolute;
+      top: 0;
+      right: 80px;
+      z-index: -1;
+      font-size: 280px;
+      line-height: 280px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      right: 0;
+    }
   }
 }
 
@@ -51,28 +92,55 @@
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $base-green;
-  background-position: center;
+  background-color: $color-green;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: 40%;
 }
 
 .advantages__item--plant::before {
   background-image: url("../../icons/stack.svg#index_icon-plant");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__item--water::before {
   background-image: url("../../icons/stack.svg#index_icon-water");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__item--food::before {
   background-image: url("../../icons/stack.svg#index_icon-food");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__item--time::before {
   background-image: url("../../icons/stack.svg#index_icon-time");
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .advantages__text {
-  background: none;
+  color: $color-dark-grey;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+  }
 }

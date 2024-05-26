@@ -4,33 +4,25 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  text-decoration: none;
   text-transform: uppercase;
-  color: $base-white;
+  background-color: $color-green;
+  color: $color-white;
   padding: 10px 0;
-  transition: background-color 0.2s linear;
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
-    transition: background-color 0.2s linear;
+    background-color: $color-green-hover;
   }
 
   &:focus-visible {
-    background-color: #5eaa2f;
-    outline: 2px solid $base-green;
+    background-color: $color-green-hover;
+    outline: 2px solid $color-green;
     outline-offset: 2px;
   }
 
   &:active {
-    color: rgba($base-white, 0.3);
+    background-color: $color-green-hover;
+    color: rgba($color-white, 0.3);
     transition: color 0.2s linear;
-  }
-
-  &:disabled {
-    background-color: #5eaa2f;
-    color: $base-white;
-    cursor: default;
-    opacity: 0.3;
   }
 }

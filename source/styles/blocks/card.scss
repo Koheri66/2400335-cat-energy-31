@@ -1,38 +1,108 @@
 .card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid $color-border-menu;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    border-bottom: none;
+    background-color: $color-light-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 38px 40px;
+  }
+}
+
+.card__link {
+  grid-row: 1 / 3;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -80px;
+  }
+}
+
+.card__link--image {
+  padding-top: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 29px;
+    padding-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 31px;
+  }
+}
+
+.card__link--image-big {
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 24px;
+  }
+}
+
+.card__link--text {
+  text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    width: 1152px;
+    margin: 0 auto;
+  }
+}
+
+.card__title {
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  color: $color-special-black;
+  width: 208px;
+  margin: 0;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
-.card__image-link {
-  background: none;
-}
+.card__list {
+  @include reset-list;
+  grid-column: 2 / 3;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-dark-grey;
+  padding-bottom: 17px;
 
-.card__title-link {
-  background: none;
-}
-
-.card__title {
-  background: none;
-}
-
-.card__features-list {
-  background: none;
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: 32px;
+  }
 }
 
 .card__item {
-  background: none;
-}
-
-.card__chapter {
-  background: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
 }
 
 .card__value {
-  background: none;
+  text-align: end;
 }
 
 .card__order {
-  background: none;
+  grid-column: 1 / -1;
+  padding: 10px 0;
 }

@@ -1,17 +1,90 @@
 .footer {
-  background-color: $base-grey;
+  background-color: $color-light-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
-.footer__logo {
-  mask-image: url("../../icons/stack.svg#footer_footer-logo");
-  background-color: currentColor;
+.footer__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px;
+  }
 }
 
-.footer__social {
-  background: none;
+.footer__logo--image {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.6;
+  }
 }
 
 .footer__logo-htmlacademy {
-  mask-image: url("../../icons/stack.svg#footer_logo-htmlacademy");
-  background-color: currentColor;
+  @include flexbox (space-between, center);
+  gap: 23px;
+  text-decoration: none;
+  padding: 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 0;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#footer_logo-htmlacademy");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    background-color: $color-grey;
+    width: 27px;
+    height: 34px;
+  }
+
+  &:hover::after {
+    background-color: $color-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    place-self: center end;
+    justify-content: end;
+    gap: 23px;
+  }
+}
+
+.footer__logo-htmlacademy--text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-special-black;
+  margin-top: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus-visible {
+    opacity: 0.6;
+  }
 }

@@ -1,49 +1,76 @@
 .example {
-  background: none;
+  padding: 25px 20px 40px;
+  background-color: $color-example-grey;
 }
 
 .example__title {
   font-family: $font-oswald;
   font-size: 36px;
   line-height: 40px;
-  color: $base-black;
+  color: $color-black;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .example__text {
   font-size: 16px;
   line-height: 24px;
+  color: $color-dark-grey;
+  margin: 0;
 }
 
 .example__list {
-  background: none;
+  @include reset-list;
+  @include flexbox(space-between, center);
+  padding-top: 20px;
+  gap: 32px;
 }
 
 .example__item {
-  background: none;
+  @include flexbox(column, center);
+  min-width: 124px;
+  border: 1px solid $color-result-border;
+  border-radius: 4px;
+  position: relative;
 }
 
 .example__units {
   font-family: $font-oswald;
   font-size: 24px;
   line-height: 24px;
-  color: $base-black;
+  color: $color-black;
   text-transform: uppercase;
+  padding: 12px 15px 18px;
+  margin: 0;
 }
 
 .example__caption {
+  position: absolute;
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  top: 46px;
+  width: 70%;
+  margin: 0;
+  padding: 0 10px;
+  background-color: $color-example-grey;
 }
 
 .example__total {
   font-family: $font-oswald;
   line-height: 20px;
+  color: $color-black;
   text-align: center;
+  margin: 0;
+  padding-top: 34px;
+  padding-bottom: 20px;
 }
 
-.example__range {
-  background: none;
+.example__slider {
+  display: grid;
+  grid-template-columns: 140px auto 140px;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .example__range-image {

@@ -1,13 +1,29 @@
 .card-all {
-  background: none;
+  @include flexbox (column, center);
+
+  @media (min-width: $tablet-width) {
+    box-shadow: 0 0 0 2px $color-grey-border;
+  }
 }
 
 .card-all__title {
   font-family: $font-oswald;
   font-size: 16px;
   line-height: 20px;
-  color: #111111;
+  color: $color-text;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .card-all__title::before {
@@ -15,14 +31,59 @@
   display: block;
   width: 30px;
   height: 30px;
-  background-image: url("../../icons/stack.svg#catalog_icon-plus");
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 23px;
+  mask-image: url("../../icons/stack.svg#catalog_icon-plus");
+  mask-repeat: no-repeat;
+  mask-size: 30px 30px;
+  background-color: $color-card-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+    mask-size: 60px 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .card-all__text {
   font-size: 12px;
   line-height: 16px;
+  color: $color-dark-grey;
+  margin: 0;
+  padding-top: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 23px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .card-all__to-all {
-  background: none;
+  color: $color-dark-grey;
+  background-color: $color-light-grey;
+  margin-top: 21px;
+  padding: 10px 0;
+  width: 100%;
+
+  &:hover {
+    background-color: $color-grey-border;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 90px;
+  }
 }
