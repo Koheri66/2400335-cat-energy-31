@@ -16,9 +16,19 @@
   }
 }
 
+.advantages__container {
+  width: $mobile-container;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container;
+  }
+}
+
 .advantages__title {
   font-family: $font-oswald;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $color-black;
   margin: 0;

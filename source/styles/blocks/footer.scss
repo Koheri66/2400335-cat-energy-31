@@ -42,7 +42,7 @@
 }
 
 .footer__logo-htmlacademy {
-  @include flexbox (space-between, center);
+  @include flexbox (row, space-between, center);
   gap: 23px;
   text-decoration: none;
   padding: 20px 0;

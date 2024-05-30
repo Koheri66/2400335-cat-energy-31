@@ -1,15 +1,37 @@
 .example {
   padding: 25px 20px 40px;
   background-color: $color-example-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, $color-white 70%, $color-example-grey 30%);
+  }
+}
+
+.example__container {
+  margin: 0 auto;
+  width: $mobile-container;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container;
+  }
 }
 
 .example__title {
   font-family: $font-oswald;
   font-size: 36px;
+  font-weight: 400;
   line-height: 40px;
   color: $color-black;
   margin: 0;
   padding-bottom: 40px;
+}
+
+.example__inner {
+  @media (min-width: $tablet-container) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .example__text {
@@ -17,13 +39,22 @@
   line-height: 24px;
   color: $color-dark-grey;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    margin-bottom: 55px;
+  }
 }
 
 .example__list {
   @include reset-list;
-  @include flexbox(space-between, center);
+  @include flexbox(row, space-between, center);
   padding-top: 20px;
   gap: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 }
 
 .example__item {
@@ -32,6 +63,10 @@
   border: 1px solid $color-result-border;
   border-radius: 4px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 162px;
+  }
 }
 
 .example__units {
@@ -54,23 +89,63 @@
   margin: 0;
   padding: 0 10px;
   background-color: $color-example-grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $color-white;
+  }
 }
 
 .example__total {
   font-family: $font-oswald;
+  font-size: 14px;
   line-height: 20px;
   color: $color-black;
   text-align: center;
+  text-transform: uppercase;
   margin: 0;
   padding-top: 34px;
   padding-bottom: 20px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/-1;
+    font-size: 20px;
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    br {
+      display: block;
+    }
+  }
 }
 
 .example__slider {
+  position: relative;
   display: grid;
-  grid-template-columns: 140px auto 140px;
-  width: 280px;
-  margin: 0 auto;
+  grid-template-columns: repeat(2, 140px);
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 280px);
+    margin: 0 auto;
+    max-width: 560px;
+  }
+}
+
+.example__slider-before,
+.example__slider-after {
+  overflow: hidden;
+}
+
+.example__slider-before {
+  @include flexbox(row, flex-start, center);
+}
+
+.example__slider-after {
+  @include flexbox(row, flex-end, center);
 }
 
 .example__range-image {

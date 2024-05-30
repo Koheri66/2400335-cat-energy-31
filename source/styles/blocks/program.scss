@@ -1,8 +1,14 @@
+.program__container {
+  margin: 0 auto;
+  width: $mobile-container;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container;
+  }
+}
+
 .program__list {
   @include reset-list;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
 
   @media (min-width: $tablet-width) {
     gap: 30px;
@@ -19,6 +25,7 @@
   display: grid;
   gap: 22px 20px;
   grid-template-columns: auto 1fr;
+  margin-bottom: 20px;
   padding: 24px 20px 12px;
   background-color: $color-light-grey;
 
@@ -119,11 +126,12 @@
 .program__title {
   font-family: $font-oswald;
   font-size: 24px;
+  font-weight: 400;
   line-height: 37px;
   color: $color-black;
   text-transform: uppercase;
-  align-self: center;
   margin: 0;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
@@ -135,7 +143,7 @@
   }
 }
 
-.programs__text {
+.program__text {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -153,7 +161,7 @@
   }
 }
 
-.programs__text::after {
+.program__text::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -171,6 +179,7 @@
   display: flex;
   align-items: center;
   place-self: center start;
+  grid-column: 1/-1;
   gap: 18px;
   margin: 10px 0 0;
   padding: 10px 0;
@@ -194,12 +203,11 @@
   }
 }
 
-.programs__link::after {
+.program__link::after {
   content: "";
   display: block;
   width: 24px;
   height: 12px;
   mask-image: url("../../icons/stack.svg#index_icon-arrow");
-  mask-repeat: no-repeat;
   background-color: $color-black;
 }

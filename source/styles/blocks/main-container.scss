@@ -1,0 +1,7 @@
+.main-container__hero {
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    min-height: 694px;
+  }
+}

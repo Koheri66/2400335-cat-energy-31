@@ -1,9 +1,22 @@
-.map__container {
-  @include flexbox (space-between);
-  padding: 26px 20px;
+.map {
+  padding: 26px 0 0;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 60px 0 0;
+  }
+}
+
+.map__container {
+  @include flexbox (row, space-between, flex-start);
+  margin: 0 auto 20px;
+  width: $mobile-container;
+
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    width: 628px;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,11 +37,11 @@
   color: $color-text;
   text-transform: uppercase;
   width: 50%;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
-    width: 23%;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,16 +49,20 @@
   }
 }
 
-.map__address {
+.map__inner {
   line-height: 20px;
   text-align: left;
   width: 50%;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-self: end;
+    height: 100%;
     font-size: 16px;
     text-align: right;
-    width: 23%;
   }
 
   @media (min-width: $desktop-width) {
@@ -54,15 +71,16 @@
   }
 }
 
+.map__address {
+  margin: 0;
+}
+
 .map__city {
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    padding: 19px;
-  }
 }
 
 .map__location {
+  display: block;
   width: 100%;
   min-height: 362px;
   border: none;
