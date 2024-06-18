@@ -1,5 +1,5 @@
 .program__container {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   width: $mobile-container;
 
   @media (min-width: $tablet-width) {
@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 570px);
     gap: 40px 80px;
   }
 }
@@ -31,12 +32,13 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 200px;
+    width: 708px;
     gap: 24px 53px;
     padding: 77px 63px 28px 52px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto 1fr;
+    width: 570px;
     gap: 23px 62px;
     padding: 48px 63px 55px 52px;
   }

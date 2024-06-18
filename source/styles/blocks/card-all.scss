@@ -1,5 +1,9 @@
 .card-all {
-  @include flexbox (column, center);
+  position: relative;
+  padding: 20px 0;
+  display: grid;
+  grid-template-columns: 280px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     box-shadow: 0 0 0 2px $color-grey-border;

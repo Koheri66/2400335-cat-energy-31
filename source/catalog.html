@@ -16,11 +16,12 @@
 <body class="page__body">
   <!-- Навигация -->
   <header class="main-header">
+    <h1 class="visually-hidden">Корм для кошек Cat Energy</h1>
     <div class="main-header__container">
       <a class="main-header__logo-image logo-image" href="index.html">
         <picture>
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/logo/logo-desktop.svg">
-          <source media="(min-width: 768px)" width="160" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/index/logo/logo-tablet.svg">
           <img class="logo-image__icon" src="images/index/logo/logo-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
         </picture>
         <picture>
@@ -29,23 +30,23 @@
           <img class="logo-image__text" src="images/index/logo/logo-text.svg" width="101" height="20" alt="Надпись Кэт энерджи">
         </picture>
       </a>
-      <button class="main-header__menu main-header__menu--js main-header__menu--nojs" type="button">
+      <button class="main-header__menu" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
     </div>
-    <nav class="main-header__navigator navigator navigator--closed navigator--opened navigator--nojs">
+    <!-- классы для меню .main-header__navigator--closed для скрытия, main-header__navigator--opened Для открытия -->
+    <nav class="main-header__navigator main-header__navigator--closed main-header__navigator--no-js">
       <ul class="navigator__list">
         <li class="navigator__item">
-          <a class="navigator__link navigator__link--current" href="index.html">Главная
+          <a class="navigator__link" href="index.html">Главная
           </a>
         </li>
         <li class="navigator__item">
-
-          <a class="navigator__link" href="catalog.html">Каталог продукции
+          <a class="navigator__link navigator__link--current" href="catalog.html">Каталог продукции
           </a>
         </li>
         <li class="navigator__item">
-          <a class="navigator__link navigator__link--final" href="#">Подбор программы
+          <a class="navigator__link" href="#">Подбор программы
           </a>
         </li>
       </ul>
@@ -320,8 +321,8 @@
 
     <!-- Дополнительные товары -->
     <section class="product-add">
-      <h2 class="product-add__title">Дополнительные товары</h2>
       <div class="product-add__container">
+        <h2 class="product-add__title">Дополнительные товары</h2>
         <ul class="product-add__list">
           <li class="product-add__item">
             <h3 class="product-add__chapter">Сахарозаменитель</h3>
